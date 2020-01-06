@@ -6,6 +6,10 @@
 
 #include "biquad.h"
 
+double Fc = 200.0;
+double sampleRate = 1000.0;
+const int bufSize = 1000;
+double in[bufSize];
 
 // When we need a biquad, we just instantiate the Biquad object, request its initial setting, 
 // then call the process function for every sample we want to filter.
